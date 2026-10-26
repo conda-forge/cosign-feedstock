@@ -31,8 +31,6 @@ build:
 requirements:
   build:
     - ${{ compiler('go-nocgo') }}
-    - if: osx
-      then: ${{ stdlib('c') }}
     - go-licenses
 
 tests:
